@@ -188,11 +188,3 @@ Feel free to use and modify with proper attribution.
 
 * `output_reports/sample_report.pdf`
 
-
-
-```
-
----
-
-✅ If you want, I can also create a **clean `requirements.txt`** and **example screenshots** section.
-```
