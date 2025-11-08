@@ -1,9 +1,4 @@
-Here is your **properly formatted & structured `README.md`**
-✅ Clean layout • ✅ Correct markdown • ✅ Organized sections
 
----
-
-```md
 # 💼 Career-Lens  
 ### AI-Powered Resume–JD ATS Analyzer
 
@@ -193,14 +188,7 @@ Feel free to use and modify with proper attribution.
 
 * `output_reports/sample_report.pdf`
 
-### ✅ Docs
 
-* `README.md`
-* `.gitignore`
-
----
-
-⭐ **If you like this project, give it a star!**
 
 ```
 
