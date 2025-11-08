@@ -3,7 +3,7 @@ help users analyze their resumes against job descriptions and generate ATS repor
 # 💼 Career Lens  
 ### Get detailed resume insights with ATS compatibility and skill analysis  
 
-![Career Lens Banner](path/to/screenshot.png)
+![Career Lens Banner](Carrer Lens Frontend.jpg)
 
 Career Lens is an intelligent **ATS Resume Analyzer** that compares resumes with job descriptions to generate detailed **ATS scores**, **skill match analysis**, and **gap insights** — helping candidates and recruiters make smarter hiring decisions.
 
