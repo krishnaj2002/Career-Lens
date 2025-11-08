@@ -1,175 +1,210 @@
-# Career-Lens
-help users analyze their resumes against job descriptions and generate ATS reports with skill matching, score analysis, and gap detection — automating a major part of the recruitment and candidate evaluation process.
-# 💼 Career Lens  
-### Get detailed resume insights with ATS compatibility and skill analysis  
+Here is your **properly formatted & structured `README.md`**
+✅ Clean layout • ✅ Correct markdown • ✅ Organized sections
 
-Career Lens is an intelligent **ATS Resume Analyzer** that compares resumes with job descriptions to generate detailed **ATS scores**, **skill match analysis**, and **gap insights** — helping candidates and recruiters make smarter hiring decisions.
+---
+
+```md
+# 💼 Career-Lens  
+### AI-Powered Resume–JD ATS Analyzer
+
+Career-Lens helps users analyze resumes against job descriptions and generate **ATS-friendly reports** with **skill matching, scoring, and gap detection**, automating major parts of the recruitment and candidate-evaluation workflow.
 
 ---
 
 ## 🚀 Features
 
-- 📤 **Resume Upload (PDF/DOCX)** – Upload resumes easily for parsing and analysis.  
-- 🧾 **Job Description Input** – Paste the complete job description to analyze compatibility.  
-- 📊 **ATS Score Calculation** – Get an ATS optimization score with improvement recommendations.  
-- 🧩 **Skill Matching Analysis** – See matched and missing technical/soft skills using charts.  
-- ⚙️ **Experience & Education Alignment** – Understand JD vs. resume alignment with clear gap reports.  
-- 🧠 **Comprehensive PDF Report** – Automatically generates a downloadable ATS analysis report.
+- 📤 **Resume Upload (PDF/DOCX)** – Extracts and parses resume data  
+- 🧾 **Job Description Input** – Accepts complete JD text for comparison  
+- 📊 **ATS Score Calculation** – Generates optimization score + suggestions  
+- 🧩 **Skill Matching Analysis** – Detects matched + missing technical & soft skills  
+- ⚙️ **Experience & Education Alignment** – Highlights mismatch & gap reports  
+- 🧠 **PDF Report Export** – Automated ATS analysis report  
 
 ---
 
 ## 🧠 Tech Stack
 
-### **Backend (Developed by: You)**
-- 🐍 **Python**
-  - `pandas`, `numpy` – Data processing and score calculations  
-  - `nltk` / `spacy` – Text analysis and keyword extraction  
-  - `PyPDF2`, `pdfminer.six` – Resume text extraction  
-  - `difflib` / `fuzzywuzzy` – Similarity matching  
-  - `matplotlib` / `plotly` – Visualizations and charts  
-  - `reportlab` – Automated PDF report generation  
+### ✅ Backend (Developed by: *You*)
+- **Python**
+  - `pandas`, `numpy` → Data processing & scoring  
+  - `nltk` / `spacy` → NLP/keyword extraction  
+  - `PyPDF2`, `pdfminer.six` → Resume parsing  
+  - `difflib` / `fuzzywuzzy` → Similarity search  
+  - `matplotlib` / `plotly` → Visual charts  
+  - `reportlab` → PDF report generation  
 
-### **Frontend (AI-Designed)**
-- 🌐 Built with a clean **React / HTML interface**
-- 📦 Drag & Drop upload area
-- 🎨 Minimal and responsive design  
+### ✅ Frontend (AI-Designed)
+- React / HTML  
+- Drag-and-Drop upload  
+- Minimal responsive UI  
 
 ---
 
 ## 📂 Project Structure
+
+```
+
 CareerLens/
 │
 ├── backend/
-│ ├── ats_analysis.py # Main Python backend logic
-│ ├── jd_parser.py # Job description processing
-│ ├── resume_extractor.py # Resume text extraction
-│ ├── skill_matcher.py # Skill and keyword comparison logic
-│ ├── score_calculator.py # ATS and alignment scoring
-│ ├── report_generator.py # Generates PDF analysis report
-│ └── requirements.txt # Python dependencies
+│   ├── ats_analysis.py          # Main backend logic
+│   ├── jd_parser.py             # JD processing
+│   ├── resume_extractor.py      # Resume text extraction
+│   ├── skill_matcher.py         # Skill/keyword matching
+│   ├── score_calculator.py      # Scoring logic
+│   ├── report_generator.py      # PDF generation
+│   └── requirements.txt         # Dependencies
 │
 ├── frontend/
-│ ├── index.html # Main UI (AI-generated)
-│ ├── style.css # Stylesheet
-│ ├── app.js # Frontend logic for uploading & calling backend API
-│ ├── assets/ # Icons, logos, and screenshots
+│   ├── index.html               # Main UI
+│   ├── style.css                # Styling
+│   ├── app.js                   # Frontend logic
+│   └── assets/                  # Icons & UI graphics
 │
 ├── output_reports/
-│ ├── sample_report.pdf # Example ATS report output
+│   └── sample_report.pdf        # Example ATS report
 │
-├── README.md # Project documentation
-└── .gitignore # To ignore unnecessary files (venv, cache, etc.)
+├── README.md
+└── .gitignore
 
+````
 
 ---
 
-## ⚙️ Installation and Setup
+## ⚙️ Installation & Setup
 
-### **1️⃣ Clone the Repository**
+### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/<yourusername>/CareerLens.git
 cd CareerLens
-2️⃣ Backend Setup
+````
+
+### 2️⃣ Backend Setup
+
+```bash
 cd backend
 pip install -r requirements.txt
+```
 
-3️⃣ Run the Backend
+### 3️⃣ Run Backend
+
+```bash
 python ats_analysis.py
+```
 
+> (Flask / FastAPI recommended for API hosting)
 
-(You can use Flask/FastAPI if you want to serve it as an API.)
+### 4️⃣ Run Frontend
 
-4️⃣ Run the Frontend
+Option A → Open directly
 
-Open index.html in your browser
-or serve it using:
+```
+frontend/index.html
+```
 
+Option B → Serve locally
+
+```bash
 python -m http.server
-
-📘 Example Usage
-
-Upload your resume (PDF/DOCX).
-
-Paste the job description.
-
-Click “Analyze Resume”.
-
-View the analysis report showing:
-
-ATS Score
-
-Skill Matches
-
-Gaps and Recommendations
-
-Download the generated report (PDF).
-
-📈 Sample Output
-Metric	Score
-ATS Optimization Score	90%
-Overall Match Score	85%
-Technical Skills Match	100%
-Soft Skills Match	25%
-🧩 Future Enhancements
-
-🔍 Integrate Machine Learning (BERT/SBERT) for semantic text similarity.
-
-📊 Add interactive dashboards using Streamlit or Dash.
-
-💬 Add feedback system to suggest missing skills.
-
-☁️ Deploy using Streamlit Cloud / Render / AWS Lambda.
-
-👨‍💻 Developers
-
-Backend Developer: Krishna Jadhav
-Co-Developer / Analyst: Anushka Suralkar
-Role: SY-MBA, Business Analytics Students
-
-🏫 Institution
-
-Sanjivani University — School of Management
-Department: MBA – Business Analytics
-
-📜 License
-
-This project is licensed under the MIT License – feel free to modify and use it with attribution.
-
-🖼️ Preview
-
-
-
-
-⭐ If you like this project, give it a star!
-
+```
 
 ---
 
-## 🧱 **Files You Should Upload to GitHub**
+## 📘 Usage
 
-### 1️⃣ **Backend Folder**
-- `ats_analysis.py`
-- `resume_extractor.py`
-- `jd_parser.py`
-- `skill_matcher.py`
-- `score_calculator.py`
-- `report_generator.py`
-- `requirements.txt`
+1. Upload your **resume (PDF/DOCX)**
+2. Paste the **job description**
+3. Click **Analyze Resume**
+4. View insights including:
 
-### 2️⃣ **Frontend Folder**
-- `index.html`
-- `style.css`
-- `app.js`
-- `assets/` (logo, screenshots, icons)
-
-### 3️⃣ **Reports Folder**
-- `output_reports/sample_report.pdf`
-
-### 4️⃣ **Documentation**
-- `README.md`
-- `.gitignore` (include `/__pycache__/`, `/venv/`, `.DS_Store`, etc.)
+   * ✅ ATS Score
+   * ✅ Skill Matches
+   * ✅ Experience / Education Fit
+   * ✅ Gap Recommendations
+5. Download the **PDF report**
 
 ---
 
-Would you like me to also generate a **`requirements.txt`** file (based on your likely Python libraries) so you can directly include it in your backend folder?  
-It’ll make your repo fully ready for cloning and testing.
+## 📈 Sample Output
+
+| Metric                 | Score |
+| ---------------------- | ----- |
+| ATS Optimization Score | 90%   |
+| Overall Match Score    | 85%   |
+| Technical Skills Match | 100%  |
+| Soft Skills Match      | 25%   |
+
+---
+
+## 🧩 Future Enhancements
+
+* 🔍 ML-based semantic similarity (BERT/SBERT)
+* 📊 Interactive dashboards (Streamlit/Dash)
+* 💬 Feedback on missing skills
+* ☁️ Cloud deployment (Streamlit Cloud / Render / AWS Lambda)
+
+---
+
+## 👨‍💻 Developers
+
+| Name                 | Role                   |
+| -------------------- | ---------------------- |
+| **Krishna Jadhav**   | Backend Developer      |
+| **Anushka Suralkar** | Co-Developer / Analyst |
+
+> SY-MBA – Business Analytics
+
+---
+
+## 🏫 Institution
+
+**Sanjivani University — School of Management**
+Department: *MBA – Business Analytics*
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+Feel free to use and modify with proper attribution.
+
+---
+
+## 🗂 Recommended GitHub Files
+
+### ✅ Backend
+
+* `ats_analysis.py`
+* `resume_extractor.py`
+* `jd_parser.py`
+* `skill_matcher.py`
+* `score_calculator.py`
+* `report_generator.py`
+* `requirements.txt`
+
+### ✅ Frontend
+
+* `index.html`
+* `style.css`
+* `app.js`
+* `assets/`
+
+### ✅ Reports
+
+* `output_reports/sample_report.pdf`
+
+### ✅ Docs
+
+* `README.md`
+* `.gitignore`
+
+---
+
+⭐ **If you like this project, give it a star!**
+
+```
+
+---
+
+✅ If you want, I can also create a **clean `requirements.txt`** and **example screenshots** section.
+```
