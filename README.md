@@ -144,8 +144,8 @@ python -m http.server
 
 | Name                 | Role                   |
 | -------------------- | ---------------------- |
-| **Krishna Jadhav**   | Backend Developer      |
-| **Anushka Suralkar** | Co-Developer / Analyst |
+| **Krishna Jadhav**   | Business Analyst      |
+| **Anushka Suralkar** | Co-Developer / Business Analyst |
 
 > SY-MBA – Business Analytics
 
